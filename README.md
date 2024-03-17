@@ -1,1 +1,1 @@
-![image]([https://i.imgur.com/h8FRGEC.png])
+<img src="https://i.imgur.com/h8FRGEC.png" width="400" height="250">
