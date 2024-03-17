@@ -13,7 +13,7 @@ function ResultURL(props: any) {
             "long_url": `https://${inputValue}`
         }, {
             headers: {
-                'Authorization': `Bearer `,
+                'Authorization': `Bearer f6caa174a6a791b5adc0208097c635a7700d7ce4`,
             }
         })
             .then(res => {

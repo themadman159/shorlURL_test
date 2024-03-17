@@ -23,7 +23,7 @@ exports.insertData = (req: Request, res: Response) => {
 
             // Second query to insert URL data along with user_id
             conn.query(
-                `INSERT INTO history(full_URL, short_URL, date, user_id) VALUES ('${fullURL}', '${shortURL}', NOW(), '${userId}')`,
+                `INSERT INTO history(view_count, full_URL, short_URL, date, user_id) VALUES ( 0, '${fullURL}', '${shortURL}', NOW(), '${userId}')`,
                 (err: any, historyResult: any) => {
                     if (err) {
                         console.error("Error inserting URL into database:", err);

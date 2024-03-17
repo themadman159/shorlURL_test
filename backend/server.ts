@@ -37,7 +37,7 @@ module.exports = conn
 // });
 
 //route
-const routeURL = require("../backend/routes/route")
+const routeURL = require("./routes/route")
 app.use("/api", routeURL)
 
 //server port
