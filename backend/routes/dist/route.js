@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express = require('express');
+var router = express.Router();
+var _a = require('../../controller/controller'), getData = _a.getData, insertData = _a.insertData, increviewCount = _a.increviewCount, insertShortURL = _a.insertShortURL;
+router.post('/insert', insertData);
+router.put('/insert/increviewCount/:historyID', increviewCount);
+router.get('/data', getData);
+router.put('/insert/shortURL', insertShortURL);
+module.exports = router;
